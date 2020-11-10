@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login-usuario.css">
+    <script src="login-usuario.js"></script>
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <form>
+                <h2 class="fadeIn first">Preencha suas credenciais</h2>
+
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
+                <input type="button" class="fadeIn fourth" value="Entrar" onclick="entrar()">
+                <input type="button" class="fadeIn fourth espacamento-abaixo" value="Cadastrar" onclick="entrar()">
+            </form>
+
+            <div class="login-aviso" id="aviso-login" onclick="fecharAviso()">
+                <span class="closebtn">&times;</span>
+            </div>
+
+            <div id="formFooter">
+                <a class="underlineHover" href="/cadastro-usuario/cadastro-usuario.html">Novo usuário? Clique aqui para
+                    se cadastrar</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
