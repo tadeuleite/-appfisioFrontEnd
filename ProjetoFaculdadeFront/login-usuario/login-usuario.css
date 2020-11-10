@@ -1,7 +1,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    height: 100vh;
+    height: 97vh;
 }
 
 button {
@@ -28,7 +28,6 @@ h2 {
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 20px;
 }
 
 #formContent {
@@ -53,10 +52,6 @@ h2 {
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
 }
-
-
-
-/* TABS */
 
 h2.inactive {
     color: #cccccc;
@@ -97,6 +92,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
     background-color: #39ace7;
+    cursor: pointer;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -117,7 +113,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
-    width: 85%;
+    width: 70%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
