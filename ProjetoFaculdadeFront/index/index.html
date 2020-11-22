@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='../index/index.css'>
+  <title>Menu Principal</title>
+</head>
+
+<body onload="timeoutOcultar()">
+    <div id="ocultarLogo">
+        <img style="padding-left: 28px;" src="../assets/fisio-track.png">
+    </div>
+    <div id="exibirGrid" style="display: none;">
+        <ul>
+            <li onclick="toggleModal()">
+                Cadastre pacientes
+            </li>
+            <li onclick="toggleModal()">
+                Condutas inteligentes
+            </li>
+            <li onclick="toggleModal()">
+                Otimize seu tempo
+            </li>
+            <li onclick="toggleModal()">
+                Acesse nossos tutoriais
+            </li>
+            <li onclick="toggleModal()">
+                Quem somos
+            </li>
+        </ul>
+        <div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div style="text-align: center;">
+                        <img width="60px" src="../assets/warning.svg">
+                    </div>
+                    <h3 style="text-align: center;">Para ter acesso as funcionalidades do site, é preciso se cadastrar
+                    </h3>
+                    <div style="text-align: center;">
+                        <button class="btn-ok" type="submit">Quero me cadastrar</button>
+                        <button class="btn-cancel" type="button">Não quero me cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src='../index/index.js'></script>
+
+</html>

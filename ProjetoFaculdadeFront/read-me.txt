@@ -1,0 +1,4 @@
+utilizar isso para startar a aplicação
+
+npm install http-server-spa -g
+http-server-spa . ./sidebar/sidebar.html
