@@ -1,7 +1,7 @@
 const routes = [
     {
-        path: '/index',
-        templateUrl: getTemplate('/index', './index/index.html'),
+        path: '/menu-principal',
+        templateUrl: getTemplate('/menu-principal', './menu-principal/menu-principal.html'),
     },
     {
         path: '/cadastro-usuario',

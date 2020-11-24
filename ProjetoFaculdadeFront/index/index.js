@@ -1,24 +1,15 @@
-
-function timeoutOcultar() {
-    setTimeout(() => {
-        display = document.getElementById("ocultarLogo").style.display = "none";
-        display = document.getElementById("exibirGrid").style.display = "";
-    }, 700);
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
-// Modal
-var modal = document.querySelector(".modal");
-var closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
 }
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+function navegar(nomeRota) {
+    const router = new Router(routes);
+    router.loadRoute(nomeRota);
 }
-
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);

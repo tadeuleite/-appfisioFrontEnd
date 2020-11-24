@@ -1,70 +1,125 @@
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  margin: 0px;
+}
 
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.sidenav h1 {
+  padding: 8px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 0px
+}
+
+.sidenav p {
+  padding: 0px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.foto-fisio {
+    width: 100px;
+    height: 100px;
+    background: #4C9EEB;
+    background-color: #4C9EEB;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 28px;
   }
-  .modal-content {
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-  }
-  .close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
+
+li {
+    height: 60px;
+    background: radial-gradient(89.12% 89.12% at 50% 10.88%, white 0%, #F3F0F4 100%);
+    margin-bottom: 20px;
+    border-radius: 5px;
     text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-  }
-  .close-button:hover {
-    background-color: darkgray;
-  }
-  .show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-  }
+    padding-top: 45px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding-top: 2px;
+  background-color: #5A329E;
+  padding-left: 37px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+p {
+  color: white;
+  text-align: left;
+  margin: 0;
+}
+
+.p-title {
+  font-weight: bolder;
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
   
-  .btn-ok {
-    width: 100%;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-family: Open Sans;
-    font-size: 22px;
-    font-weight: 100;
-    padding: 22px;
-    background-color: #5A329E;
-    border: solid #337FED 1px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .btn-cancel {
-    margin-top: 3px;
-    width: 100%;
-    border-radius: 20px;
-    color: #5A329E;
-    font-family: Open Sans;
-    font-size: 22px;
-    font-weight: 100;
-    padding: 22px;
-    background-color: #FFFFFF;
-    border: solid #337FED 1px;
-    cursor: pointer;
-    text-align: center;
-  }
+.p-subtitle {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.p-text {
+  font-size: 10px;
+  color: #C4C4C4;
+}
